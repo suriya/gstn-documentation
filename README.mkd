@@ -1,0 +1,30 @@
+# Community-maintained GSTN Documentation
+
+This project aims to provide developers, tax consultants, and other professionals with information about the APIs provided by [Goods and Services Tax Network (GSTN)](http://www.gstn.org/), the technology backbone for GST in India, and compliment [GSTN's official documentation](http://developer.gstsystem.co.in/apiportal/).
+
+## Contribute
+You may contribute in the following ways
+
+* Ask a question by [creating an issue](https://github.com/suriya/gstn-documentation/issues/new). As part of closing the issue, we will update the documentation.
+* Report errors and gaps in the documentation by [creating a new issue](https://github.com/suriya/gstn-documentation/issues/new).
+* Update the documentation and submit pull requests. To submit a pull request, you can directly edit the documentation from your web browser.
+
+## License
+This project is released under the liberal [MIT License](https://en.wikipedia.org/wiki/MIT_License). By contributing to this project you agree to release your code or documentation under this license.
+
+## Documentation
+1. [GST Ecosystem](http://www.gstn.org/ecosystem/)
+   1. [List of Approved GST Suvidha Providers (GSP)](http://www.gstn.org/ecosystem/pdf/Finals_from_Delhi_and_Bangalore.pdf)
+2. [Developer Portal](http://developer.gstsystem.co.in/apiportal/)
+   1. [Getting started and accessing the GSTN Sandbox](http://developer.gstsystem.co.in/apiportal/howToStart)
+   2. Encryption - GST APIs use encryption between GSTN and ASP software to protect man-in-the-middle attacks, including by GSPs
+      * To encrypt ASP Application Key with the GSTN Public Key, use RSA/ECB/PKCS1Padding [Source](https://groups.google.com/d/msg/gst-suvidha-provider-gsp-discussion-group/-KmWdUpN_ag/CZiij_qvDAAJ)
+      * For every other request encryption and response decryption, use AES/ECB/PKCS5Padding [Source](https://groups.google.com/d/msg/gst-suvidha-provider-gsp-discussion-group/-KmWdUpN_ag/CZiij_qvDAAJ)
+   3. [Authentication APIs](http://developer.gstsystem.co.in/apiportal/taxpayer/authentication)
+      1. [Authentication workflow](http://developer.gstsystem.co.in/pages/apiportal/data/Authentication/Overview.pdf)
+   4. [Returns APIs](http://developer.gstsystem.co.in/apiportal/taxpayer/returns)
+      1. [Returns overview](http://developer.gstsystem.co.in/pages/apiportal/data/Returns/Overview.pdf)
+      2. [Returns workflow](https://docs.google.com/viewer?a=v&pid=forums&srcid=MDg2NzM5NTIyNDYwODE2NTY2MzABMTcyNjAwNzA1NzgyMTY3MjU0ODIBRDlfMmV0YUJCZ0FKATAuMQEBdjI) - [Mailing list announcement](https://groups.google.com/forum/#!topicsearchin/gst-suvidha-provider-gsp-discussion-group/author$3Aecosystem.gstn@gmail.com/gst-suvidha-provider-gsp-discussion-group/ss0KNERfH7I)
+      3. [Returns API sequence diagrams](https://groups.google.com/forum/#!msg/gst-suvidha-provider-gsp-discussion-group/4zxwPN8Wcyc/ZMpiTrm8AgAJ)
+      4. [Checksum algorithm](https://groups.google.com/d/msg/gst-suvidha-provider-gsp-discussion-group/sH1HdJHPw3E/aGbeIPi7AAAJ)
+
